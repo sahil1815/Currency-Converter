@@ -1,0 +1,126 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* Currency Converter Container */
+.container {
+    background: rgba(255, 255, 255, 0.2); /* Glassmorphism effect */
+    backdrop-filter: blur(15px);
+    padding: 2rem;
+    min-height: 50vh;
+    width: 40vw;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+}
+
+/* Title */
+.container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Amount Input */
+.amount {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.amount input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.select-country {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.6rem;
+    border-radius: 8px;
+}
+
+.select-country img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+form select {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Exchange Rate Output */
+.output {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+/* Stylish Button */
+.container button {
+    width: 100%;
+    border: none;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background: #ff5722;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container button:hover {
+    background: #e64a19;
+}
+
+.container button:active {
+    transform: scale(0.95);
+}
+/* Dropdown options */
+form select option {
+    background: #1e3c72;
+    color: white;
+}
