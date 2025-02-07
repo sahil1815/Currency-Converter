@@ -124,3 +124,41 @@ form select option {
     background: #1e3c72;
     color: white;
 }
+
+/* 🌍 RESPONSIVE DESIGN */
+
+/* 🔹 Small Screens (Tablets, 768px and below) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 70vw; /* Increase width for better readability */
+        padding: 1.5rem;
+    }
+    .amount {
+        flex-direction: column;
+    }
+    .dropdown {
+        flex-direction: column;
+        align-items: center;
+    }
+    form select {
+        width: 100%;
+    }
+}
+
+/* 🔹 Extra Small Screens (Phones, 480px and below) */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90vw;
+        padding: 1.2rem;
+    }
+    .container h2 {
+        font-size: 1.5rem;
+    }
+    .output {
+        font-size: 1.3rem;
+    }
+    .container button {
+        font-size: 1rem;
+        height: 45px;
+    }
+}
